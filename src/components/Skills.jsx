@@ -1,34 +1,33 @@
-import React from 'react'
-import htmlLogo from '../assets/img/html.png'
-import cssLogo from '../assets/img/css.png'
-import jsLogo from '../assets/img/js.png'
-import monogodbLogo from '../assets/img/mongodb.png'
-import nextLogo from '../assets/img/nextjs-icon.png'
-import reactLogo from '../assets/img/physics.png'
-import Cplus from '../assets/img/CPlus.png'
-import Java from '../assets/img/Java.png'
-import MsSQL from '../assets/img/MsSQL.png'
-import MySQL from '../assets/img/MySQL.png'
-import Python from '../assets/img/Python.png'
-import NodeJs from '../assets/img/nodeJs.png'
-import PowerBI from '../assets/img/PowerBI.png'
-import RStudio from '../assets/img/RStudio.png'
-import FireBase from '../assets/img/FireBase.png'
-import PS from '../assets/img/PS.png'
-import AE from '../assets/img/AE.png'
-import Jira from '../assets/img/Jira.png'
-import Git from '../assets/img/Git.png'
-import Docker from '../assets/img/Docker.png'
-import Postman from '../assets/img/Postman.png'
-import AWS from '../assets/img/AWS.png'
-import SpringBoot from '../assets/img/SpringBoot.png'
-import postgressLogo from '../assets/img/postgresql-icon.svg'
-import prismaLogo from '../assets/img/prisma.png'
-import tsLogo from '../assets/img/ts-logo-512.png'
-import { motion,  } from 'framer-motion' 
-import { useInView } from 'react-intersection-observer'
-import { FaPython } from 'react-icons/fa6'
-
+import React from "react";
+import htmlLogo from "../assets/img/html.png";
+import cssLogo from "../assets/img/css.png";
+import jsLogo from "../assets/img/js.png";
+import monogodbLogo from "../assets/img/mongodb.png";
+import nextLogo from "../assets/img/nextjs-icon.png";
+import reactLogo from "../assets/img/physics.png";
+import Cplus from "../assets/img/CPlus.png";
+import Java from "../assets/img/Java.png";
+import MsSQL from "../assets/img/MsSQL.png";
+import MySQL from "../assets/img/MySQL.png";
+import Python from "../assets/img/Python.png";
+import NodeJs from "../assets/img/NodeJs.png";
+import PowerBI from "../assets/img/PowerBI.png";
+import RStudio from "../assets/img/RStudio.png";
+import FireBase from "../assets/img/FireBase.png";
+import PS from "../assets/img/PS.png";
+import AE from "../assets/img/AE.png";
+import Jira from "../assets/img/Jira.png";
+import Git from "../assets/img/Git.png";
+import Docker from "../assets/img/Docker.png";
+import Postman from "../assets/img/Postman.png";
+import AWS from "../assets/img/AWS.png";
+import SpringBoot from "../assets/img/SpringBoot.png";
+import postgressLogo from "../assets/img/postgresql-icon.svg";
+import prismaLogo from "../assets/img/prisma.png";
+import tsLogo from "../assets/img/ts-logo-512.png";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { FaPython } from "react-icons/fa6";
 
 const Skills = () => {
   const skills = [
@@ -124,27 +123,25 @@ const Skills = () => {
   };
 
   const childVariants = {
-    hidden: { scale: 0.8, y:100,  opacity: 0 },
-    visible: { 
-      scale: 1,  
+    hidden: { scale: 0.8, y: 100, opacity: 0 },
+    visible: {
+      scale: 1,
       opacity: 1,
-      y:0, 
-      transition: { 
-        type: 'spring', 
-        stiffness: 100, 
-        damping: 10 
-      } 
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 10,
+      },
     },
   };
 
-    const { ref, inView } = useInView({
-      threshold: 0.1, 
-    });
-    const { ref:ref1, inView:inView1 } = useInView({
-      threshold: 0.1, 
-    });
-
-
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+  });
+  const { ref: ref1, inView: inView1 } = useInView({
+    threshold: 0.1,
+  });
 
   return (
     <div
@@ -192,6 +189,6 @@ const Skills = () => {
       </motion.div>
     </div>
   );
-}
+};
 
-export default Skills
+export default Skills;
