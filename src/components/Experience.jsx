@@ -8,7 +8,7 @@ import {
 } from "mdb-react-ui-kit";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Intern from "../assets/img/intern.jpg";
+import Intern from "../assets/img/Intern.jpg";
 
 const Experience = () => {
   const { ref: ref5, inView: inView6 } = useInView({
